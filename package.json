@@ -1,0 +1,19 @@
+{
+  "name": "try-microfronteds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run products\" \"npm run cart\" \"npm run container\"",
+    "container" : "cd ./container && npm run start",
+    "products": "cd ./products && npm run start",
+    "cart": "cd ./cart && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "7.6.0"
+  }
+}
